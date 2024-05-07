@@ -35,3 +35,81 @@
     <script src="script.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.bio h2,
+.contact-info h2,
+.additional-details h2 {
+    margin-top: 20px;
+}
+
+.toggle-button {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.toggle-button:hover {
+    color: #0056b3;
+}
+
+.toggle-button:active {
+    color: #003d99;
+}
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('toggleButton');
+    const detailsSection = document.querySelector('.additional-details');
+
+    toggleButton.addEventListener('click', function() {
+        if (detailsSection.style.display === 'none' || !detailsSection.style.display) {
+            detailsSection.style.display = 'block';
+            toggleButton.textContent = 'Show Less';
+        } else {
+            detailsSection.style.display = 'none';
+            toggleButton.textContent = 'Show More';
+        }
+    });
+});
