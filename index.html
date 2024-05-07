@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vasudevan - 3D Creator</title>
+    <title>Advanced Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,83 +11,51 @@
             padding: 0;
             background-color: #f0f0f0;
         }
-        header {
-            background-color: #000;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        nav {
-            text-align: center;
-            background-color: #555;
-            padding: 10px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #444;
-        }
         .container {
             max-width: 800px;
-            margin: 20px auto;
+            margin: 0 auto;
             padding: 20px;
             background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        footer {
-            background-color: #333;
-            color: #fff;
+        h1, h2, p {
+            margin: 0;
+        }
+        .profile {
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .profile h1 {
+            font-size: 24px;
+        }
+        .profile p {
+            font-size: 18px;
+        }
+        #toggleButton {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+        #details {
+            display: none;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Vasudevan</h1>
-        <p>3D Creator Animator Gamer Game Creator</p>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-    </nav>
     <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi, I'm Vasudevan, a passionate 3D creator. I specialize in creating stunning 3D models, animations, and visualizations.</p>
-        </section>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>Here are some examples of my work:</p>
-            <!-- Add your portfolio items here -->
-            <!-- Example: -->
-            <div class="portfolio-item">
-                <img src="100.png" alt="Example" style="width: 100%">
-                <h3>Vasudevan Animation</h3>
-                <p>My 3D creation in Blender</p>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>You can reach out to me via email at <a href="mailto:va5ud3va1@outlook.com">va5ud3va1@outlook.com</a>.</p>
-        </section>
-    </div>
-    <footer>
-        &copy; 2024 Vasudevan - 3D Creator
-    </footer>
-</body>
-</html>
+        <div class="profile">
+            <img id="profileImg" src="profile-picture.jpg" alt="Profile Picture">
+            <h1 id="profileName">Your Name</h1>
+            <p id="profileInfo">3D Artist | Game Developer</p>
+        </div>
+        <h2>About Me</h2>
+        <p id="aboutText">This is where you can write a brief description about yourself, your skills, interests, and experiences.</p>
+        <h2>Contact Information</h2>
+        <p>Email: <span id="email">example@example.com</span></p>
+        <p>Website: <a id="website" href="https
